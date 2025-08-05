@@ -1,0 +1,15 @@
+@import './styles/abstract/_index.scss';
+@import './styles/components/_index.scss';
+*{
+    font-family: "Poppins", sans-serif;
+}
+.maincontainer{
+    display: flex;
+    &-sidebar{
+        width: 13.7%;
+    }
+    &-main{
+        width: 86.3%;
+        border: 2px solid black;
+    }
+}

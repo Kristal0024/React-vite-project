@@ -1,0 +1,69 @@
+@import'./_variables.scss';
+h1{
+    font-size: $heading;
+    font-weight: $font-bold;
+    @include responsive-for(lg){
+        font-size: $subhead;
+    }
+    @include responsive-for(sm){
+        font-size: $small-head;
+    }
+}
+h2{
+    font-size: $subhead;
+    color:$color-secondary;
+    font-weight: $font-semibold;
+    line-height: 1.25;
+      @include responsive-for(lg){
+        font-size: $small-head;
+    }
+    @include responsive-for(sm){
+        font-size: $text-large;
+    }
+}
+h3{
+    font-size: $subhead;
+    font-weight: $font-medium;
+    color: $color-secondary;
+    @include responsive-for(lg){
+        font-size: $small-head;
+    }
+    @include responsive-for(sm){
+        font-size: $text-large;
+    }
+}
+h4{
+    font-size:$section-head;
+    color: $color-dark;
+    font-weight: $font-medium;
+       @include responsive-for(lg){
+        font-size: $text-large;
+    }
+    @include responsive-for(sm){
+        font-size: $text-medium;
+    }
+}
+h5{
+    font-size: $small-head;
+    font-weight: $font-medium;
+    color: $accordion-title-dark;
+    line-height: 1;
+       @include responsive-for(lg){
+        font-size: $text-regular;
+    }
+    @include responsive-for(sm){
+        font-size: $text-small;
+    }
+}
+p{
+    color: $color-body;
+}
+p[role="small"]{
+    font-size: $text-small;
+}
+p[role="medium"]{
+    font-size: $text-medium;
+}
+p[role="large"]{
+    font-size: $text-large;
+}

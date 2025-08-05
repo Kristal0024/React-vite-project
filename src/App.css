@@ -1,0 +1,214 @@
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  color: #151931;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #151931;
+}
+
+h4 {
+  font-size: 27px;
+  color: #3B3758;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #102f28;
+  line-height: 1;
+}
+
+p {
+  color: #46435E;
+}
+
+p[role=small] {
+  font-size: 14px;
+}
+
+p[role=medium] {
+  font-size: 18px;
+}
+
+p[role=large] {
+  font-size: 20px;
+}
+
+.sidebarwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 13.7%;
+}
+.sidebarwrapper-logo {
+  width: 100%;
+  height: 13rem;
+  position: relative;
+}
+.sidebarwrapper-logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.sidebarwrapper-button {
+  background-color: #f9ca21;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  text-align: center;
+  color: #151931;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.sidebarwrapper-content {
+  background-color: #151931;
+  height: 100%;
+}
+.sidebarwrapper-content-menu {
+  width: 100%;
+  background-color: #151931;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 2rem;
+}
+.sidebarwrapper-content-menu li {
+  display: flex;
+  color: #E2E1F1;
+  list-style: none;
+  align-items: center;
+  padding-left: 0.5rem;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.sidebarwrapper-content-menu li:hover {
+  color: #f9ca21;
+}
+.sidebarwrapper-content-menu li svg {
+  font-size: 1.1rem;
+}
+.sidebarwrapper p {
+  line-height: 2.8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #B4B3C2;
+}
+
+.Herosectionwrapper {
+  height: 100%;
+  position: relative;
+  height: 100vh;
+  background-image: url(../../assets/header-bg.jpg);
+  background-size: cover;
+}
+.Herosectionwrapper-coloroverlay {
+  background-color: rgba(21, 25, 49, 0.5);
+  height: 100vh;
+  padding: 100px;
+  padding-top: 0;
+}
+.Herosectionwrapper-mail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px 30px;
+  background-color: #f9ca21;
+  font-size: 1.5rem;
+  color: #151931;
+}
+.Herosectionwrapper-mail svg {
+  margin: 0.5rem 0rem;
+}
+.Herosectionwrapper-contact {
+  display: flex;
+  padding-top: 1.2rem;
+  gap: 15%;
+}
+.Herosectionwrapper-contact p {
+  color: #d9dae7;
+  font-weight: 500;
+}
+.Herosectionwrapper-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Herosectionwrapper-info-details {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  gap: 1rem;
+  padding-left: 3.5rem;
+}
+.Herosectionwrapper-info-details h1 {
+  color: #ffffff;
+}
+.Herosectionwrapper-info-details h1 span {
+  color: #f9ca21;
+}
+.Herosectionwrapper-info-details p[role=large] {
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+.Herosectionwrapper-info-details p[role=medium] {
+  color: #d9dae7;
+}
+
+.button {
+  font-size: 400;
+  background-color: #f9ca21;
+  padding: 1rem 1.7rem;
+  color: #151931;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 1;
+}
+.button-primary {
+  transition: all 0.5s ease;
+}
+.button-primary:hover {
+  color: #ffffff;
+  padding-right: 30px;
+  letter-spacing: 0.5px;
+}
+.button-secondary {
+  transition: all 0.5s ease;
+}
+.button-secondary:hover {
+  color: #ffffff;
+  padding-right: 30px;
+  padding-left: 30px;
+  letter-spacing: 0.5px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.maincontainer {
+  display: flex;
+}
+.maincontainer-sidebar {
+  width: 13.7%;
+}
+.maincontainer-main {
+  width: 86.3%;
+  border: 2px solid black;
+}/*# sourceMappingURL=App.css.map */

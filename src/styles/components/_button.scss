@@ -1,0 +1,28 @@
+.button{
+    font-size: $font-regular;
+    background-color: $primary;
+    padding: 1rem 1.7rem;
+    color: $color-secondary;
+    border: none;
+    border-radius: 5px;
+    font-weight: $font-medium;
+    line-height: 1;
+    &-primary{
+        transition: all 0.5s ease;
+        &:hover{
+           color: $color-white;
+           padding-right: 30px;
+        //    padding-left: 33px;
+           letter-spacing: 0.5px;
+        }
+    }
+    &-secondary{
+        transition: all 0.5s ease;
+        &:hover{
+           color: $color-white;
+           padding-right: 30px;
+           padding-left: 30px;
+           letter-spacing: 0.5px;
+        }
+    }
+}
