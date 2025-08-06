@@ -1,10 +1,15 @@
 import { FaCircle } from "react-icons/fa";
+import { FaUserGraduate } from "react-icons/fa";
+import { GiGraduateCap } from "react-icons/gi";
+import { IoDocumentTextOutline } from "react-icons/io5";
+import { FaCode } from "react-icons/fa";
+import { FiPenTool } from "react-icons/fi";
 function Resumesection(){
 return (
     <>
     <section role="individual-component" className="Resumesectionwrapper">
         <div className="Resumesectionwrapper-header">
-            <h2>My Resume</h2>
+            <h1>My Resume</h1>
             <h3>Education and Experience</h3>
         </div>
         <div className="Resumesectionwrapper-experience">
@@ -13,7 +18,7 @@ return (
                    <div className="Resumeborder-boxes">
                      <div className="box">
                         <div className="box-logo">
-                            <p>logo</p>
+                            <FiPenTool />
                         </div>
                         <div className="box-detail">
                             <h5>UI/UX Designer</h5>
@@ -33,7 +38,7 @@ return (
                     </div>
                     <div className="box">
                         <div className="box-logo">
-                            <p>logo</p>
+                            <FaCode />
                         </div>
                         <div className="box-detail">
                             <h5>UI/UX Designer</h5>
@@ -53,7 +58,7 @@ return (
                    <div className="Resumeborder-boxes">
                      <div className="box">
                         <div className="box-logo">
-                            <p>logo</p>
+                            <FaUserGraduate />
                         </div>
                         <div className="box-detail">
                             <h5>UI/UX Designer</h5>
@@ -63,7 +68,7 @@ return (
                     </div>
                      <div className="box">
                         <div className="box-logo">
-                            <p>logo</p>
+                            <GiGraduateCap />
                         </div>
                         <div className="box-detail">
                             <h5>UI/UX Designer</h5>
@@ -73,7 +78,7 @@ return (
                     </div>
                     <div className="box">
                         <div className="box-logo">
-                            <p>logo</p>
+                            <IoDocumentTextOutline />
                         </div>
                         <div className="box-detail">
                             <h5>UI/UX Designer</h5>
@@ -90,6 +95,9 @@ return (
                    
                 </div>     
             </div>
+        </div>
+        <div className="Resumesectionwrapper-button">
+           <button className="button button-secondary">Download CV</button>
         </div>
     </section>
     </>

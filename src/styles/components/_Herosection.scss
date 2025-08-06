@@ -32,6 +32,7 @@
         }
     }
     &-info{
+        width: 85%;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -41,7 +42,7 @@
        &-details{
         display: flex;
         flex-direction: column;
-        width: 65%;
+        width: 55%;
         gap: 1rem;
         padding-left: 3.5rem;
          h1{
@@ -71,6 +72,17 @@
             padding: 6px 10px;
             font-size: $text-regular;
             color: $color-border;
+            cursor: pointer;
+            transition: all 0.1s ease;
+            border-radius: 5px;
+            &:Hover{
+                border: 1px solid $primary;
+                border-radius: 50%;
+                color: $primary;
+            }
+            svg{
+                font-size: 1rem;
+            }
         }
        }
       }
