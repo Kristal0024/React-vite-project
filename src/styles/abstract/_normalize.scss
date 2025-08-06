@@ -67,3 +67,7 @@ p[role="medium"]{
 p[role="large"]{
     font-size: $text-large;
 }
+section[role="individual-component"]{
+    padding: 100px 0;
+    height: fit-content;
+}

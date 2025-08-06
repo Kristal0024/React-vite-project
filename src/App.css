@@ -45,6 +45,12 @@ p[role=large] {
   font-size: 20px;
 }
 
+section[role=individual-component] {
+  padding: 100px 0;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .sidebarwrapper {
   position: fixed;
   top: 0;
@@ -198,6 +204,90 @@ p[role=large] {
   letter-spacing: 0.5px;
 }
 
+.Resumesectionwrapper {
+  background-color: #46435E;
+  padding: 0 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.Resumesectionwrapper-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.Resumesectionwrapper-experience {
+  position: relative;
+}
+.Resumeborder {
+  position: relative;
+  border-left: 3px solid #B4B3C2;
+  left: 3rem;
+}
+.Resumeborder-boxes {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.Resumeborder-boxes .box {
+  border: 2px solid blue;
+  display: flex;
+  width: 390px;
+  height: 180px;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.circle {
+  height: 100%;
+  position: absolute;
+  left: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+  top: 0;
+}
+.circle span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #151931;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle span svg {
+  font-size: 8px;
+  color: #f9ca21;
+}
+
+.box {
+  width: 390px;
+  height: 180px;
+  padding: 30px;
+  display: flex;
+}
+.box-logo {
+  width: 15%;
+}
+.box-detail {
+  width: 85%;
+}
+.box h4 {
+  margin-bottom: 20px;
+}
+.box p {
+  margin-bottom: 7px;
+  padding-bottom: 8px;
+}
+.box p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -210,5 +300,5 @@ p[role=large] {
 }
 .maincontainer-main {
   width: 86.3%;
-  border: 2px solid black;
+  height: 100vh;
 }/*# sourceMappingURL=App.css.map */

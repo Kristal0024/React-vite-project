@@ -35,6 +35,9 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
        &-details{
         display: flex;
         flex-direction: column;
@@ -55,6 +58,19 @@
         p[role="medium"]{
             color: $color-head;
 
+        }
+       }
+       &-socialmedia{
+        display: flex;
+        flex-direction: column;
+        width: 16px;
+        align-items: center;
+        gap: 15px;
+        span{
+            border: 1px solid $color-border;
+            padding: 6px 10px;
+            font-size: $text-regular;
+            color: $color-border;
         }
        }
       }

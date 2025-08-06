@@ -1,0 +1,24 @@
+.box{
+       width: 390px;
+        height: 180px;
+        padding: 30px;
+        &-logo{
+            width: 15%;
+        }
+        &-detail{
+            width: 85%;
+        }
+        h4{
+            margin-bottom: 20px;
+        }
+        p{
+           margin-bottom: 7px;
+           padding-bottom: 8px;
+        }
+        p{
+            margin: 0;
+            padding-top: 10px;
+            font-size: $text-small;
+        }
+        display: flex;
+}

@@ -1,5 +1,6 @@
 import Sidebar from './components/Sidebar';
 import Herosection from './components/Herosection';
+import Resumesection from './components/Resumesection';
 import './App.scss';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       </div>
      <main className='maincontainer-main'>
       <Herosection/>
+      <Resumesection/>
     </main>
     </div>
     </>
