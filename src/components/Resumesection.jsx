@@ -8,7 +8,7 @@ function Resumesection(){
 return (
     <>
     <section role="individual-component" className="Resumesectionwrapper">
-        <div className="Resumesectionwrapper-header">
+        <div className="Resumesectionwrapper-header headers">
             <h1>My Resume</h1>
             <h3>Education and Experience</h3>
         </div>

@@ -47,8 +47,18 @@ p[role=large] {
 
 section[role=individual-component] {
   padding: 100px 0;
-  height: -moz-fit-content;
-  height: fit-content;
+}
+
+.headers {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.headers h1 {
+  color: #d9dae7;
+  font-weight: 600;
+}
+.headers h3 {
+  font-weight: 400;
 }
 
 .sidebarwrapper {
@@ -150,14 +160,18 @@ section[role=individual-component] {
   font-weight: 500;
 }
 .Herosectionwrapper-info {
+  width: 85%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .Herosectionwrapper-info-details {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 55%;
   gap: 1rem;
   padding-left: 3.5rem;
 }
@@ -174,6 +188,30 @@ section[role=individual-component] {
 }
 .Herosectionwrapper-info-details p[role=medium] {
   color: #d9dae7;
+}
+.Herosectionwrapper-info-socialmedia {
+  display: flex;
+  flex-direction: column;
+  width: 16px;
+  align-items: center;
+  gap: 15px;
+}
+.Herosectionwrapper-info-socialmedia span {
+  border: 1px solid #6a6d8d;
+  padding: 6px 10px;
+  font-size: 16px;
+  color: #6a6d8d;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border-radius: 5px;
+}
+.Herosectionwrapper-info-socialmedia span:Hover {
+  border: 1px solid #f9ca21;
+  border-radius: 50%;
+  color: #f9ca21;
+}
+.Herosectionwrapper-info-socialmedia span svg {
+  font-size: 1rem;
 }
 
 .button {
@@ -203,55 +241,82 @@ section[role=individual-component] {
   padding-left: 30px;
   letter-spacing: 0.5px;
 }
+.button-hire {
+  background-color: transparent;
+  color: #f9ca21;
+  transition: all 0.5s ease;
+}
+.button-hire:hover {
+  padding-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+.button-send {
+  background-color: #151931;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.button-send:hover {
+  padding-right: 30px;
+  padding-left: 30px;
+  letter-spacing: 0.5px;
+}
 
 .Resumesectionwrapper {
-  background-color: #46435E;
+  background-color: #f7f7f7;
   padding: 0 20px;
   height: -moz-fit-content;
   height: fit-content;
+  width: 100%;
 }
-.Resumesectionwrapper-header {
+.Resumesectionwrapper-experience-individual {
+  display: flex;
+}
+.Resumesectionwrapper-button {
+  width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  padding-top: 100px;
 }
-.Resumesectionwrapper-experience {
-  position: relative;
-}
+
 .Resumeborder {
   position: relative;
   border-left: 3px solid #B4B3C2;
   left: 3rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
 }
 .Resumeborder-boxes {
   display: flex;
   flex-direction: column;
-  padding-left: 70px;
+  padding-left: 60px;
   gap: 20px;
   justify-content: space-between;
   margin-top: 20px;
 }
 .Resumeborder-boxes .box {
-  border: 2px solid blue;
   display: flex;
-  width: 390px;
+  width: 425px;
   height: 180px;
   padding: 30px;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .circle {
   height: 100%;
   position: absolute;
-  left: 2.6rem;
+  left: -0.45rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-top: 20%;
+  gap: 30%;
   z-index: 3;
   top: 0;
 }
 .circle span {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: #151931;
   display: flex;
@@ -259,7 +324,7 @@ section[role=individual-component] {
   align-items: center;
 }
 .circle span svg {
-  font-size: 8px;
+  font-size: 6px;
   color: #f9ca21;
 }
 
@@ -288,6 +353,60 @@ section[role=individual-component] {
   font-size: 14px;
 }
 
+.servicewrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.servicewrapper-details {
+  margin-left: 100px;
+  display: flex;
+  gap: 35px;
+}
+.servicewrapper-details .service {
+  width: 350px;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 40px;
+  gap: 20px;
+  position: relative;
+}
+.servicewrapper-details .service-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.servicewrapper-details .service-logo {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background-color: #f5f7ff;
+  border: 2px solid red;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicewrapper-details .service-logo span svg {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.servicewrapper-details .service-detail {
+  position: relative;
+}
+.servicewrapper-details .service-detail ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.servicewrapper-details .service-detail ul li {
+  list-style: none;
+}
+
+@keyframes animate {}
 * {
   font-family: "Poppins", sans-serif;
 }

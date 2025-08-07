@@ -70,3 +70,15 @@ p[role="large"]{
 section[role="individual-component"]{
     padding: 100px 0;
 }
+
+.headers{
+     text-align: center;
+    margin-bottom: 50px;
+    h1{
+      color: $color-head;
+      font-weight: $font-semibold;
+    }
+    h3{
+      font-weight: $font-regular;
+    }
+}
