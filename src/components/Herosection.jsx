@@ -1,6 +1,7 @@
 import { GrMail } from "react-icons/gr";
 import { FaFacebookF } from "react-icons/fa";
 import { TiSocialGithub } from "react-icons/ti";
+import { TiSocialLinkedin } from "react-icons/ti";
 function Herosection(){
     return (
 <>
@@ -23,6 +24,7 @@ function Herosection(){
     <div className="Herosectionwrapper-info-socialmedia">
         <span><FaFacebookF /></span>
         <span><TiSocialGithub /></span>
+        <span><TiSocialLinkedin /></span>
     </div>
 </div>
 </div>

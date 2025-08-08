@@ -96,6 +96,37 @@ return (
                 </div>     
             </div>
         </div>
+                <div className="Resumesectionwrapper-progress">
+            <div className="Resumesectionwrapper-progress-left">
+                <div className="progressbar">
+                    <h5>Web Development <span>85%</span></h5>
+                    <progress value={80} max={100}></progress>
+                    </div >
+                    <div className="progressbar">
+                    <h5>Graphics Design <span>85%</span></h5>
+                    <progress value={80} max={100}></progress>
+                    </div>
+                    <div className="progressbar">
+                    <h5>UI/UX Design <span>85%</span></h5>
+                    <progress value={80} max={100}></progress>
+                    </div>
+            </div>
+            <div className="Resumesectionwrapper-progress-right">
+                <div className="progressbar">
+                    <h5>Web Development <span>85%</span></h5>
+                    <progress value={80} max={100}></progress>
+                    </div >
+                    <div className="progressbar">
+                    <h5>Graphics Design <span>85%</span></h5>
+                    
+                    <progress value={80} max={100}></progress>
+                    </div>
+                    <div className="progressbar">
+                    <h5>UI/UX Design <span>85%</span></h5>
+                    <progress value={80} max={100}></progress>
+                    </div>
+            </div>
+        </div>
         <div className="Resumesectionwrapper-button">
            <button className="button button-secondary">Download CV</button>
         </div>

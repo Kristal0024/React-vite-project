@@ -214,6 +214,70 @@ section[role=individual-component] {
   font-size: 1rem;
 }
 
+.Aboutsectionwrapper {
+  margin: 0 85px;
+}
+.Aboutsectionwrapper-details {
+  display: flex;
+  gap: 40px;
+}
+.Aboutsectionwrapper-details-left {
+  margin-bottom: 50px;
+}
+.Aboutsectionwrapper-details-right h1 {
+  color: #d9dae7;
+  margin: 0;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.Aboutsectionwrapper-details-right h3 {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.Aboutsectionwrapper-details-right p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.Aboutsectionwrapper-contact {
+  display: flex;
+  gap: 100px;
+}
+.Aboutsectionwrapper-contact ul {
+  padding: 0;
+}
+.Aboutsectionwrapper-contact ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #46435E;
+}
+.Aboutsectionwrapper-contact ul li svg {
+  margin-right: 10px;
+  color: #f9ca21;
+}
+.Aboutsectionwrapper-work {
+  display: flex;
+}
+.Aboutsectionwrapper-work .fun-fact {
+  width: 300px;
+  display: flex;
+  gap: 15px;
+  padding: 25px;
+}
+.Aboutsectionwrapper-work .fun-fact span svg {
+  font-size: 32px;
+  color: #f9ca21;
+}
+.Aboutsectionwrapper-work .fun-fact-disc p {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.Aboutsectionwrapper-work .fun-fact-disc span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .button {
   font-size: 400;
   background-color: #f9ca21;
@@ -275,6 +339,69 @@ section[role=individual-component] {
   width: 100%;
   text-align: center;
   padding-top: 100px;
+}
+.Resumesectionwrapper-progress {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.Resumesectionwrapper-progress-left {
+  margin-left: 90px;
+  width: 40%;
+  padding-top: 90px;
+}
+.Resumesectionwrapper-progress-left .progressbar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.Resumesectionwrapper-progress-left .progressbar h5 {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.Resumesectionwrapper-progress-left .progressbar progress {
+  width: 100%;
+  border: none;
+  height: 6px;
+}
+.Resumesectionwrapper-progress-left .progressbar progress::-webkit-progress-bar {
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+.Resumesectionwrapper-progress-left .progressbar progress::-webkit-progress-value {
+  background-color: #f9ca21;
+}
+.Resumesectionwrapper-progress-right {
+  padding-top: 85px;
+  width: 40%;
+  margin-right: 95px;
+}
+.Resumesectionwrapper-progress-right .progressbar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.Resumesectionwrapper-progress-right .progressbar h5 {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.Resumesectionwrapper-progress-right .progressbar progress {
+  width: 100%;
+  border: none;
+  height: 6px;
+}
+.Resumesectionwrapper-progress-right .progressbar progress::-webkit-progress-bar {
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+.Resumesectionwrapper-progress-right .progressbar progress::-webkit-progress-value {
+  background-color: #f9ca21;
 }
 
 .Resumeborder {
@@ -357,6 +484,7 @@ section[role=individual-component] {
   width: 100%;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .servicewrapper-details {
   margin-left: 100px;
@@ -365,26 +493,30 @@ section[role=individual-component] {
 }
 .servicewrapper-details .service {
   width: 350px;
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   padding: 56px 40px;
   gap: 20px;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 4px 4px 60px 8px #f7f7f7;
 }
 .servicewrapper-details .service-animation {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 0%;
+  z-index: 0;
+  background-color: #f9ca21;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 .servicewrapper-details .service-logo {
   position: relative;
   height: 60px;
   width: 60px;
   background-color: #f5f7ff;
-  border: 2px solid red;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -401,12 +533,55 @@ section[role=individual-component] {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0;
 }
 .servicewrapper-details .service-detail ul li {
   list-style: none;
 }
+.servicewrapper-details .service-detail ul li svg {
+  margin-right: 20px;
+}
+.servicewrapper-details .service:hover .service-animation {
+  width: 100%;
+}
+.servicewrapper .cardimg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 90px;
+}
 
-@keyframes animate {}
+.hiresection {
+  width: 100%;
+  background: url(../../assets/hire-bg.jpg);
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.hiresection-detail h1 {
+  color: #ffffff;
+}
+.hiresection-detail-content {
+  width: 100%;
+  display: flex;
+}
+.hiresection-detail-content .play {
+  width: 50%;
+  border: 2px solid pink;
+}
+.hiresection-detail-content .hirebtn {
+  width: 50%;
+  border: 2px solid pink;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }

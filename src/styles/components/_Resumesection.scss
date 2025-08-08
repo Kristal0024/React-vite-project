@@ -15,6 +15,69 @@
     text-align: center;
     padding-top: 100px;
   }
+  &-progress{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &-left{
+      margin-left: 90px;
+      width: 40%;
+      padding-top: 90px;
+      .progressbar{
+        h5{
+          font-size: $text-medium;
+          font-weight: $font-medium;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        progress{
+          width: 100%;
+          border: none;
+          height: 6px;
+          &::-webkit-progress-bar{
+            border-radius: 5px;
+            background-color: #e9ecef;
+          }
+          &::-webkit-progress-value{
+            background-color: $primary;
+          }
+        }
+      }
+    }
+    &-right{
+      padding-top: 85px;
+      width: 40%;
+      margin-right: 95px;
+      .progressbar{
+         h5{
+          font-size: $text-medium;
+          font-weight: $font-medium;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+           progress{
+          width: 100%;
+          border: none;
+          height: 6px;
+          &::-webkit-progress-bar{
+            border-radius: 5px;
+            background-color: #e9ecef;
+          }
+          &::-webkit-progress-value{
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
 }
 .Resumeborder {
   position: relative;
