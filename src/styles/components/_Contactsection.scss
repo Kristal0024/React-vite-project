@@ -1,0 +1,103 @@
+.contactwrapper{
+    background-color: #edbc11;
+    padding-bottom: 0;
+    &-header{
+        h1{
+            color: #f8e399;
+        }
+    }
+    &-details{
+        display: flex;
+        &-form{
+            display: flex;
+            flex-direction: column;
+            width: 52%;
+            gap: 15px;
+            margin-left: 85px;
+            input{
+                padding: 20px;
+                border: none;
+                border-bottom: 2px solid $color-dark;
+                background-color: transparent;
+                outline: none;
+            }
+            textarea{
+                padding: 20px;
+                height: 140px;
+                border: none;
+                border-bottom: 2px solid $color-dark;
+                background-color: transparent;
+                outline: none;
+                resize: none;
+            }
+            .buttonholder{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .button{
+                    margin-top: 30px;
+                }
+            }
+        }
+        &-map{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 85px 0 40px;
+            svg{
+                margin-right: 10px;
+                width: 24px;
+                height: 100%;
+                color: $color-black;
+            }
+        }
+    }
+}
+.footer{
+    display: flex;
+    padding: 80px 60px;
+    align-items: center;
+    gap: 8%;
+    background-color: #edbc11;
+    span{
+        font-size: $text-medium;
+        font-weight: $font-medium;
+        color: $accordion-title;
+    }
+    &-details{
+        display: flex;
+        ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-right: 40px;
+        color: $accordion-title;
+        li{
+            font-size: $text-medium;
+                font-weight: $font-medium;
+            list-style: none;
+        }
+    }
+    }
+    &-socialmedia{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        span{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 5px 24px 0px rgba(66, 64, 64, 0.12);
+            font-size: $text-regular;
+            transition: all 0.5s ease;
+            &:hover{
+                background-color: $color-body;
+                color: $color-white;
+            }
+        }
+    }
+}
