@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -312,10 +313,13 @@ section[role=individual-componentsecond] {
   background-color: transparent;
   color: #f9ca21;
   transition: all 0.5s ease;
+  border: 2px solid #f9ca21;
+  padding: 0.5rem 1.8rem;
+  height: 60px;
 }
 .button-hire:hover {
-  padding-bottom: 25px;
-  letter-spacing: 0.5px;
+  padding: 0.5rem 1.8rem 0.7rem 1.8rem;
+  letter-spacing: 0.8px;
 }
 .button-send {
   background-color: #151931;
@@ -559,15 +563,15 @@ section[role=individual-componentsecond] {
   width: 100%;
   background: url(../../assets/hire-bg.jpg);
   background-size: cover;
-  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
   text-align: center;
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-attachment: scroll;
-  background-size: cover;
+  background-attachment: fixed;
 }
 .hiresection-detail h1 {
   color: #ffffff;
@@ -575,14 +579,28 @@ section[role=individual-componentsecond] {
 .hiresection-detail-content {
   width: 100%;
   display: flex;
+  margin-top: 50px;
+  height: 80%;
+  align-items: center;
 }
 .hiresection-detail-content .play {
-  width: 50%;
-  border: 2px solid pink;
+  width: 35%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 70%;
+}
+.hiresection-detail-content .play svg {
+  color: #f9ca21;
+  font-size: 60px;
 }
 .hiresection-detail-content .hirebtn {
+  height: 70%;
+  margin-left: 100px;
   width: 50%;
-  border: 2px solid pink;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .contactwrapper {
@@ -686,6 +704,44 @@ section[role=individual-componentsecond] {
 .footer-socialmedia span:hover {
   background-color: #46435E;
   color: #ffffff;
+}
+
+.faqwrapper {
+  margin: 0 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faqwrapper-accordion {
+  width: 65%;
+}
+.faqwrapper-accordion .accordion-item {
+  border: none;
+  background-color: #ffffff;
+  color: #3B3758;
+  padding: 10px;
+}
+.faqwrapper-accordion .accordion-header {
+  border: none;
+}
+.faqwrapper-accordion .accordion-header .accordion-button {
+  border: none;
+  box-shadow: none;
+  background-color: #f8f7ff;
+  color: #47416f;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 25px 20px;
+}
+.faqwrapper-accordion .accordion-header .accordion-button::after {
+  background-image: none !important;
+  content: "+";
+}
+.faqwrapper-accordion .accordion-header .accordion-button:not(.collapsed)::after {
+  content: "−";
+}
+.faqwrapper-accordion .accordion-body {
+  margin: auto 20px;
 }
 
 * {

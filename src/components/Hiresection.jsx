@@ -7,7 +7,7 @@ function Hiresection(){
             <h1>Interested Working With Me?</h1>
             <div className="hiresection-detail-content">
                 <div className="play"><BsFillPlayCircleFill /></div>
-                <div className="hirebtn"><button>Hire Me</button></div>
+                <div className="hirebtn"><button className="button button-hire">Hire Me</button></div>
             </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ import Resumesection from './components/Resumesection';
 import Services from './components/Servicessection';
 import Hiresection from './components/Hiresection';
 import Contact from './components/Contactsection';
+import Faq from './components/Faqsection';
 import './App.scss';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Resumesection/>
       <Services/>
       <Hiresection/>
+      <Faq/>
       <Contact/>
     </main>
     </div>
