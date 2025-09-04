@@ -12,7 +12,7 @@ import { TbMoodNerd } from "react-icons/tb";
 function About() {
   return (
     <>
-      <section role="individual-component" className='Aboutsectionwrapper'>
+      <section role="individual-component" className='Aboutsectionwrapper' id='about'>
         <div className="Aboutsectionwrapper-details">
           <div className="Aboutsectionwrapper-details-left">
             <img src={aboutimg} alt="" />

@@ -7,7 +7,7 @@ import { BsFillPlayCircleFill } from "react-icons/bs";
 function Services(){
   return(
       <>
-      <section role="individual-component" className="servicewrapper">
+      <section role="individual-component" className="servicewrapper" id="service">
         <div className="servicewrapper-header headers">
             <h1>My Services</h1>
             <h3>A brief of Offering Services</h3>

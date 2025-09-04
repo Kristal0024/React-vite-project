@@ -63,15 +63,16 @@ p[role="small"]{
 }
 p[role="medium"]{
     font-size: $text-medium;
+    color: $color-head;
 }
 p[role="large"]{
     font-size: $text-large;
 }
 section[role="individual-component"]{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 section[role="individual-componentsecond"]{
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .headers{

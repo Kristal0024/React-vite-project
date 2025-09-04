@@ -1,12 +1,10 @@
 import Accordion from 'react-bootstrap/Accordion';
+import Header from './Header';
 function Faq(){
 return(
     <>
     <section role="individual-component" className="faqwrapper">
-    <div className="faqwrapper-header headers">
-        <h1>FAQS</h1>
-        <h3>Have any questions?</h3>
-    </div>
+      <Header heading="FAQS" subheading="Have any questions?"/>
     <div className="faqwrapper-accordion">
         <Accordion>
           <Accordion.Item eventKey="0">

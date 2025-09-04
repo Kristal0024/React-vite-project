@@ -130,3 +130,29 @@
         }
     }
 }
+@media only screen and (max-width:992px) and (min-width:769px){
+ .Resumesectionwrapper{
+  padding: 0;
+  &-progress{
+    // border: 2px solid red;
+    &-left{
+      margin-left: 50px;
+    }
+    &-right{
+      margin-right: 50px;
+    }
+  }
+ }
+ .Resumeborder{
+  // border: 2px solid red;
+  left: 1rem;
+  margin-left: 50px;
+  &-boxes{
+    padding-left: 50px;
+    .box{
+      width: 325px;
+      height: 200px;
+    }
+  }
+ }
+}

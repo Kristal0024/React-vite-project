@@ -1,13 +1,29 @@
 .Aboutsectionwrapper{
-    margin: 0 85px;
+    // border: 2px solid red;
+    width: 100%;
     &-details{
         display: flex;
-        gap: 40px;
+        // margin: 0 46px;
+        padding: 0 7.5px 0 20px;
+        gap: 15px;
+        width: 100%;
         &-left{
-            margin-bottom: 50px;
+            width: 40%;
+              margin-bottom: 50px;
+              padding:0 10px;
+            //   border: 2px solid red;
+              margin-left: 46px;
+              img{
+                width: 100%;
+              }
         }
         &-right{
-            h1{
+            margin-top: 10px;
+            margin-right: 46px;
+            // border: 2px solid blue;
+            width: 55%;
+            padding: 0 10px;
+                    h1{
                      color: $color-head;
                      margin: 0;
                      margin-top: 15px;
@@ -22,10 +38,11 @@
         margin-bottom: 30px;
     }
         }
+        
     }
     &-contact{
         display: flex;
-        gap: 100px;
+        gap: 20%;
         ul{
             padding: 0;
             li{
@@ -40,17 +57,20 @@
             }
         }
     }
-    &-work{
+        &-work{
+            // border: 2px solid blue;
+            justify-content: center;
         display: flex;
+        gap: 6%;
         .fun-fact{
-            width: 300px;
+            // border: 2px solid red;
+            width: 220px;
             display: flex;
-            gap: 15px;
-            padding: 25px;
             span{
                 svg{
                     font-size: 32px;
                     color: $primary;
+                    margin-right: 10px;
                 }
             }
             &-disc{
@@ -66,4 +86,36 @@
             }
         }
     }
+}
+@media only screen and (max-width:992px) and (min-width:769px){
+  .Aboutsectionwrapper{
+    &-details{
+        gap: 0px;
+        &-left{
+            margin-left: 26px;
+            width: 45%;
+            display: flex;
+            align-items: center;
+        }
+        &-right{
+            padding-right: 0;
+            margin-right: 26px;
+        }
+    }
+    &-contact{
+            gap: 5%;
+        }
+        &-work{
+            flex-wrap: wrap;
+            width: 100%;
+            // border: 2px solid red;
+            align-items: center;
+            justify-content: center;
+            gap: 20%;
+            .fun-fact{
+                margin-bottom: 2%;
+                margin-top: 5%;
+            }
+        }
+  }
 }
