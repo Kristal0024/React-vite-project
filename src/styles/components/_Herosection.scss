@@ -52,6 +52,9 @@
             gap: 10px;
             h1{
                 color: $color-white;
+                @include responsive-for($lg){
+                    font-size: $subhead;
+                }
                 span{
                     color: $primary;
                 }
@@ -97,6 +100,7 @@
 }
 @media only screen and (max-width:992px) and (min-width:769px){
     .Herosectionwrapper{
+        background-position: center;
         &-coloroverlay{
             &-mail{
                 display: none;
@@ -115,5 +119,57 @@
                 }
             }
         }
+    }
+}
+@media only screen and (max-width:768px) and (min-width:576px){
+    .Herosectionwrapper {
+        background-position: center;
+          &-coloroverlay{
+            &-mail{
+                display: none;
+            }
+        &-info{
+        // position: absolute;
+        width: 70%;
+        // border: 2px solid red;
+        // margin-left: 60px;
+     }
+      &-socialmedia{
+        left: 15%;
+        top: 80%;
+        display: flex;
+        gap: 25px;
+        span{
+            display: flex;
+            flex-direction: row;
+        }
+      }
+    }
+    }
+}
+@media only screen and (max-width:575px){
+     .Herosectionwrapper {
+        background-position: center;
+          &-coloroverlay{
+            &-mail{
+                display: none;
+            }
+        &-info{
+        // position: absolute;
+        width: 70%;
+        // border: 2px solid red;
+        margin-left: 20px;
+     }
+      &-socialmedia{
+        left: 5%;
+        top: 80%;
+        display: flex;
+        gap: 25px;
+        span{
+            display: flex;
+            flex-direction: row;
+        }
+      }
+    }
     }
 }

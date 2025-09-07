@@ -3,11 +3,10 @@
     padding: 0 20px;
     height: fit-content;
     width: 100%;
-  &-header {
-  }
   &-experience {
     &-individual {
       display: flex;
+      gap: 10px;
     }
   }
   &-button{
@@ -130,28 +129,115 @@
         }
     }
 }
-@media only screen and (max-width:992px) and (min-width:769px){
+@media only screen and (max-width:992px) and (min-width:768px){
  .Resumesectionwrapper{
   padding: 0;
   &-progress{
-    // border: 2px solid red;
     &-left{
-      margin-left: 50px;
+      margin-left: 40px;
     }
     &-right{
-      margin-right: 50px;
+      margin-right: 40px;
     }
   }
  }
  .Resumeborder{
-  // border: 2px solid red;
   left: 1rem;
-  margin-left: 50px;
+  margin-left: 40px;
   &-boxes{
     padding-left: 50px;
     .box{
-      width: 325px;
-      height: 200px;
+      width: 270px;
+      height: 250px;
+    }
+  }
+ }
+}
+@media only screen and (max-width:769px) and (min-width:480px){
+
+   .Resumesectionwrapper{
+    &-experience{
+      // border: 2px solid red;
+      &-individual{
+            // display: flex;
+      flex-direction: column;
+      //  margin-left: 5%;
+      // justify-content: center;
+      align-items: center;
+      }
+    }
+  &-progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-left{
+      margin: 0;
+      width: 80%;
+    }
+    &-right{
+      margin: 0;
+         width: 80%;
+    }
+  }
+ }
+ .Resumeborder{
+  // border: 2px solid green;
+  left: 0;
+  width: 90%;
+  margin: 0;
+  margin-left: 10%;
+  &-boxes{
+    .box{
+      width: 80%;
+      height: 80%;
+     
+    }
+  }
+ }
+}
+@media only screen and (max-width:479px){
+
+   .Resumesectionwrapper{
+    &-experience{
+      // border: 2px solid red;
+      &-individual{
+            // display: flex;
+      flex-direction: column;
+      //  margin-left: 5%;
+      // justify-content: center;
+      align-items: center;
+      }
+    }
+  &-progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-left{
+      margin: 0;
+      width: 80%;
+    }
+    &-right{
+      padding-top: 20px;
+      margin: 0;
+         width: 80%;
+    }
+  }
+  &-button{
+    padding: 40px;
+  }
+ }
+ .Resumeborder{
+  // border: 2px solid green;
+  left: 0;
+  width: 90%;
+  margin: 0;
+  margin-left: 10%;
+  &-boxes{
+     padding-left: 30px;
+    .box{
+      width: 90%;
+      height: 80%;
+     
     }
   }
  }

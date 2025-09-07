@@ -64,6 +64,9 @@ p[role="small"]{
 p[role="medium"]{
     font-size: $text-medium;
     color: $color-head;
+    @include responsive-for($lg){
+                    font-size: $text-p-small;
+                }
 }
 p[role="large"]{
     font-size: $text-large;

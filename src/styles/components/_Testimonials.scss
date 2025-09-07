@@ -1,0 +1,88 @@
+.testimonialwrapper {
+  height: 100vh;
+  padding-top: 80px !important;
+  &-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    // border: 2px solid red;
+    &-card {
+        position: relative;
+      width: 550px;
+      // border: 2px solid green;
+      height: 340px;
+      padding: 40px;
+      box-shadow: 0 5px 40px rgba(0, 0, 0, 0.084);
+      margin-bottom: 10px;
+      &-quote {
+        text-align: center;
+        padding-bottom: 10px;
+        svg {
+          color: $primary;
+          font-size: $heading;
+        }
+      }
+      &-info {
+        margin-top: 20px;
+        p {
+          color: $color-body;
+        }
+      }
+      &-profile {
+        display: flex;
+        gap: 25px;
+        // border: 2px solid red;
+        margin-top: 40px;
+        align-items: center;
+        .profileimg {
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: 2px solid;
+          }
+        }
+        .detail {
+          display: flex;
+          flex-direction: column;
+          // border: 2px solid purple;
+          h6 {
+            font-size: 20px;
+            margin: 0;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+      .circleimg{
+        position: absolute;
+        right: -3.5%;
+        bottom: -5.5%;
+        
+        // border: 2px solid red;
+      }
+    }
+  }
+   &-radiobtns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        // border: 2px solid ;
+        margin-top: 40px;
+        gap: 15px;
+        button{
+            width: 15px;
+            height: 14px;
+            border: 2px solid $primary;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+        }
+        .active{
+            background-color: $primary;
+        }
+    }
+}

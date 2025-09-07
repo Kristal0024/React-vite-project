@@ -7,6 +7,8 @@ import Hiresection from './components/Hiresection';
 import Contact from './components/Contactsection';
 import Faq from './components/Faqsection';
 import Worksection from './components/Worksection';
+import Testimonials from './components/Testimonials';
+import Blogsection from './components/Blogsection';
 import './App.scss';
 import { useState,useEffect } from 'react';
 
@@ -49,10 +51,12 @@ const element= document.getElementById(id)
       <Aboutsection/>
       <Resumesection/>
       <Services/>
-      <Hiresection/>
-      <Faq/>
-      <Worksection/>
-      <Contact/>
+      {/* <Hiresection/> */}
+      {/* <Faq/> */}
+      {/* <Worksection/> */}
+      {/* <Testimonials/> */}
+      {/* <Blogsection/> */}
+      {/* <Contact/> */}
     </main>
     </div>
     </>
