@@ -3,10 +3,10 @@ import profile1 from "../assets/profile1.jpg";
 import client1 from "../assets/client1.jpg";
 import client3 from "../assets/client3.jpg";
 import { useState, useEffect } from "react";
-import circleimg from '../assets/testicon.png';
+import circleimg from "../assets/testicon.png";
 function Testimonials() {
   const [activeindex, setactiveindex] = useState(0);
-    useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       setactiveindex((prev) => (prev + 1) % 3);
     }, 3000);
@@ -75,7 +75,7 @@ function Testimonials() {
                   <p>{item.post}</p>
                 </div>
               </div>
-                <img src={circleimg} alt="" className="circleimg"/>
+              <img src={circleimg} alt="" className="circleimg" />
             </div>
           ))}
         </div>

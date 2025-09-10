@@ -3,7 +3,7 @@ $xl:1200px;
 $lg:960px;
 $md:768px;
 $sm:576px;
-$xs:350;
+$xs:350px;
 @mixin responsive-for($size){
     @if ($size==$xs){
         @media all and (max-width:$xs){

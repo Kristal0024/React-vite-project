@@ -54,9 +54,9 @@ const element= document.getElementById(id)
       <Hiresection/>
       <Faq/>
       <Worksection/>
-      {/* <Testimonials/> */}
-      {/* <Blogsection/> */}
-      {/* <Contact/> */}
+      <Testimonials/>
+      <Blogsection/>
+      <Contact/>
     </main>
     </div>
     </>
