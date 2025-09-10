@@ -51,9 +51,9 @@ const element= document.getElementById(id)
       <Aboutsection/>
       <Resumesection/>
       <Services/>
-      {/* <Hiresection/> */}
-      {/* <Faq/> */}
-      {/* <Worksection/> */}
+      <Hiresection/>
+      <Faq/>
+      <Worksection/>
       {/* <Testimonials/> */}
       {/* <Blogsection/> */}
       {/* <Contact/> */}
