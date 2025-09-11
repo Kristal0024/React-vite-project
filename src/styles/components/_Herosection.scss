@@ -154,6 +154,10 @@
             &-mail{
                 display: none;
             }
+            &-contact {
+                flex-direction: column;
+                align-items: start;
+            }
         &-info{
         // position: absolute;
         width: 70%;

@@ -49,7 +49,7 @@ function Testimonials() {
   ];
   return (
     <>
-      <section role="individual-component" className="testimonialwrapper">
+      <section role="individual-component" className="testimonialwrapper" id="testimonial">
         <div className="headers">
           <h1>Testimonial</h1>
           <h3>People What Are Saying</h3>

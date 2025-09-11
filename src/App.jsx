@@ -11,9 +11,11 @@ import Testimonials from './components/Testimonials';
 import Blogsection from './components/Blogsection';
 import './App.scss';
 import { useState,useEffect } from 'react';
+import Hamburgermenu from './components/Hamburgermenu';
 
 function App() {
 const [activeComponent,setActiveComponent]=useState("home");
+const[windowWidth,setWindowWidth]=useState(window.innerWidth);
 useEffect(()=>{
   const handlescroll=()=>{
     const sections=document.querySelectorAll("section");
@@ -27,10 +29,15 @@ useEffect(()=>{
       }
     });
     setActiveComponent(currentsection);
-  }
+  };
+   const handleresize = () => {
+      setWindowWidth(window.innerWidth);
+    };
   window.addEventListener("scroll",handlescroll);
+   window.addEventListener("resize",handleresize);
   return ()=>{
     window.removeEventListener("scroll",handlescroll);
+    window.removeEventListener("resize", handleresize);
   }
 },[]);
 const scrolltocomponent=(id)=>{
@@ -41,10 +48,11 @@ const element= document.getElementById(id)
   return (
     <>
     <div className="maincontainer">
+      {windowWidth < 992 && (<Hamburgermenu activeComponent={activeComponent}
+        scrolltocomponent={scrolltocomponent} />) }
       <div className='maincontainer-sidebar'>
-        <Sidebar activeComponent={activeComponent}
-        scrolltocomponent={scrolltocomponent}
-        />
+        {windowWidth >= 992 && (<Sidebar activeComponent={activeComponent}
+        scrolltocomponent={scrolltocomponent} />)}
       </div>
      <main className='maincontainer-main'>
       <Herosection/>
