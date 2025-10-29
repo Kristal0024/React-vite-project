@@ -13,51 +13,22 @@ import "./App.scss";
 import { useState, useEffect, useRef } from "react";
 import Hamburgermenu from "./components/Hamburgermenu";
 
-import LocomotiveScroll from "locomotive-scroll";
 function App() {
   const [activeComponent, setActiveComponent] = useState("home");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const scrollRef = useRef(null);
+  
   useEffect(() => {
-    // 1️⃣ Get the scroll container and check if it exists
-    const el = document.querySelector("[data-scroll-container]");
-    if (!el) return; // exit if container not rendered yet
-
-    // 2️⃣ Initialize LocomotiveScroll
-    const scroll = new LocomotiveScroll({
-      el,
-      smooth: true,
-
-      scrollCallback: ({ scroll }) => {
-        const scrollY = scroll?.y || 0;
-        const sections = el.querySelectorAll("section");
-        let currentsection = "home";
-        sections.forEach((section) => {
-          const sectiontop = section.offsetTop;
-          const sectionheight = section.clientHeight;
-
-          if (scrollY >= sectiontop && scrollY < sectiontop + sectionheight) {
-            currentsection = section.getAttribute("id");
-          }
-        });
-        setActiveComponent(currentsection);
-      },
-    });
-    scrollRef.current = scroll;
+ 
     const handleresize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleresize);
     return () => {
-      scroll.destroy();
       window.removeEventListener("resize", handleresize);
     };
   }, []);
   const scrolltocomponent = (id) => {
     const element = document.getElementById(id);
-    if (element && scrollRef.current) {
-      scrollRef.current.scrollTo(element, {
-        offset: 0,
-        duration: 3,
-      });
+    if (element) {
+      element.scrollIntoView({behavior:"smooth"});
     }
   };
 
@@ -79,10 +50,7 @@ function App() {
           )}
         </div>
         <main
-          className="maincontainer-main"
-          data-scroll-container
-          data-scroll-speed={Math.random().toFixed(1)}
-        >
+          className="maincontainer-main">
           <section id="home">
             <Herosection
               activeComponent={activeComponent}
@@ -102,46 +70,46 @@ function App() {
             />
           </section>
           <section id="service">
-            <Services
+            {/* <Services
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            />
+            /> */}
           </section>
           <section id="hire">
-            <Hiresection
+            {/* <Hiresection
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            />
+            /> */}
           </section>
           <section id="faq">
-            <Faq
+            {/* <Faq
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            />
+            /> */}
           </section>
           <section id="work">
-            <Worksection
+            {/* <Worksection
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            />
+            /> */}
           </section>
           <section id="testimonial">
-            <Testimonials
+            {/* <Testimonials
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            />
+            /> */}
           </section>
           <section id="blog">
-            <Blogsection
+            {/* <Blogsection
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            />
+            /> */}
           </section>
           <section id="contact">
-            <Contact
+            {/* <Contact
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            />
+            /> */}
           </section>
         </main>
       </div>

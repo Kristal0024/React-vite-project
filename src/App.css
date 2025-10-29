@@ -360,6 +360,7 @@ section[role=individual-componentsecond] {
   color: #f9ca21;
 }
 .Aboutsectionwrapper-work {
+  width: 100%;
   justify-content: center;
   display: flex;
   gap: 6%;
@@ -383,7 +384,7 @@ section[role=individual-componentsecond] {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 992px) and (min-width: 768px) {
+@media only screen and (max-width: 1105px) and (min-width: 768px) {
   .Aboutsectionwrapper-details {
     gap: 0px;
   }
@@ -665,6 +666,30 @@ section[role=individual-componentsecond] {
   color: #f9ca21;
 }
 
+@media only screen and (max-width: 1300px) and (min-width: 1201px) {
+  .Resumesectionwrapper-experience-individual .Resumeborder {
+    left: 0.5rem;
+  }
+  .Resumesectionwrapper-experience-individual .Resumeborder-boxes {
+    padding-left: 40px;
+  }
+  .Resumesectionwrapper-experience-individual .Resumeborder-boxes .box {
+    width: 360px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
+  .Resumesectionwrapper-experience-individual .Resumeborder {
+    left: 0.1rem;
+  }
+  .Resumesectionwrapper-experience-individual .Resumeborder-boxes {
+    padding-left: 30px;
+  }
+  .Resumesectionwrapper-experience-individual .Resumeborder-boxes .box {
+    width: 300px;
+    height: 200px;
+  }
+}
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .Resumesectionwrapper {
     padding: 0;
@@ -1650,9 +1675,6 @@ section[role=individual-componentsecond] {
 }
 
 @media only screen and (max-width: 992px) {
-  .maincontainer {
-    width: 100vw;
-  }
   .maincontainer-sidebar {
     display: none;
   }
