@@ -874,6 +874,24 @@ section[role=individual-componentsecond] {
   width: 90px;
 }
 
+@media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .servicewrapper {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .servicewrapper-details {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
+  .servicewrapper {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .servicewrapper-details {
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (max-width: 992px) and (min-width: 448px) {
   .servicewrapper {
     height: -moz-fit-content;
@@ -904,7 +922,7 @@ section[role=individual-componentsecond] {
     width: fit-content;
   }
   .servicewrapper-details .service {
-    width: 300px;
+    width: 260px;
     padding: 36px 20px;
   }
 }
@@ -923,7 +941,7 @@ section[role=individual-componentsecond] {
     width: fit-content;
   }
   .servicewrapper-details .service {
-    width: 250px;
+    width: 230px;
     padding: 5px;
   }
 }
@@ -1339,6 +1357,15 @@ section[role=individual-componentsecond] {
   color: #f9ca21;
 }
 
+@media only screen and (max-width: 1233px) and (min-width: 993px) {
+  .worksectionwrapper-head {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .worksectionwrapper-head-btns {
+    width: auto;
+  }
+}
 @media only screen and (max-width: 992px) and (min-width: 769px) {
   .worksectionwrapper-head {
     flex-direction: column;
@@ -1461,6 +1488,11 @@ section[role=individual-componentsecond] {
   background-color: #f9ca21;
 }
 
+@media only screen and (max-width: 1440px) and (min-width: 993px) {
+  .blogsectionwrapper-cards {
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .blogsectionwrapper-cards {
     flex-direction: column;
@@ -1566,6 +1598,11 @@ section[role=individual-componentsecond] {
   background-color: #f9ca21;
 }
 
+@media only screen and (max-width: 1440px) and (min-width: 993px) {
+  .testimonialwrapper-cards {
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .testimonialwrapper {
     height: -moz-fit-content;
@@ -1587,6 +1624,9 @@ section[role=individual-componentsecond] {
   }
   .testimonialwrapper-cards-card {
     width: 450px;
+  }
+  .testimonialwrapper-cards .circleimg {
+    transform: translateX(-10px);
   }
 }
 @media only screen and (max-width: 479px) {

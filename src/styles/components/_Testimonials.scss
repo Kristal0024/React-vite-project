@@ -93,6 +93,13 @@
         }
     }
 }
+@media only screen and (max-width:1440px) and (min-width:993px){
+  .testimonialwrapper{
+    &-cards{
+      flex-wrap: wrap;
+    }
+  }
+}
 @media only screen and (max-width:992px) and (min-width:768px){
   .testimonialwrapper{
     height: fit-content;
@@ -110,6 +117,9 @@
       align-items: center;
       &-card{
         width: 450px;
+      }
+      .circleimg{
+        transform: translateX(-10px);
       }
     }
   }

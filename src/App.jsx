@@ -70,46 +70,46 @@ function App() {
             />
           </section>
           <section id="service">
-            {/* <Services
+            <Services
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            /> */}
+            />
           </section>
           <section id="hire">
-            {/* <Hiresection
+            <Hiresection
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            /> */}
+            />
           </section>
           <section id="faq">
-            {/* <Faq
+            <Faq
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            /> */}
+            />
           </section>
           <section id="work">
-            {/* <Worksection
+            <Worksection
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            /> */}
+            />
           </section>
           <section id="testimonial">
-            {/* <Testimonials
+            <Testimonials
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            /> */}
+            />
           </section>
           <section id="blog">
-            {/* <Blogsection
+            <Blogsection
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            /> */}
+            />
           </section>
           <section id="contact">
-            {/* <Contact
+            <Contact
               activeComponent={activeComponent}
               scrolltocomponent={scrolltocomponent}
-            /> */}
+            />
           </section>
         </main>
       </div>
