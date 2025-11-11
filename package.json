@@ -1,7 +1,6 @@
-
 {
   "name": "portfolio",
-  "homepage":"https://Kristal0024.github.io/React-vite-project",
+  "homepage": "https://Kristal0024.github.io/React-vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,10 +10,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "framer-motion": "^12.23.24",
     "hamburger-react": "^2.5.2",
     "icofont": "^1.0.0",
     "locomotive-scroll": "^5.0.0-beta.21",

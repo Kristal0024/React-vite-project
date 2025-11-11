@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 @font-face {
@@ -26,6 +27,17 @@
 /* Apply globally */
 body {
   font-family: "Poppins", sans-serif;
+}
+body .cursor {
+  background-color: #f9ca21;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
 }
 
 h1 {

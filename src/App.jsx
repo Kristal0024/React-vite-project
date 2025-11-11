@@ -12,19 +12,42 @@ import Blogsection from "./components/Blogsection";
 import "./App.scss";
 import { useState, useEffect, useRef } from "react";
 import Hamburgermenu from "./components/Hamburgermenu";
+import {motion} from "framer-motion";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("home");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [mousePosition,setmousePosition]=useState({
+    x:0,
+    y:0
+  });
+  console.log(mousePosition);
   
   useEffect(() => {
- 
     const handleresize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleresize);
     return () => {
       window.removeEventListener("resize", handleresize);
     };
   }, []);
+  useEffect(()=>{
+    const mouseMove=e=>{
+      setmousePosition({
+        x:e.clientX,
+        y:e.clientY
+      })
+    }
+    window.addEventListener("mousemove",mouseMove);
+    return()=>{
+      window.removeEventListener("mousemove",mouseMove);
+    }
+    },[]);
+    const variants={
+      default:{
+        x:mousePosition.x-9,
+        y:mousePosition.y-9
+      }
+    }
   const scrolltocomponent = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -35,6 +58,7 @@ function App() {
   return (
     <>
       <div className="maincontainer">
+        <motion.div className="cursor" variants={variants} animate='default'/>
         {windowWidth < 992 && (
           <Hamburgermenu
             activeComponent={activeComponent}
