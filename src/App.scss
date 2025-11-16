@@ -37,7 +37,19 @@ body {
     top: 0;
     left: 0;
     z-index: 3;
-    pointer-events: none
+    pointer-events: none;
+    }
+    button{
+      cursor: none;
+      &:hover{
+        cursor: none;
+      }
+      &:focus{
+        cursor: none;
+      }
+      &:enabled{
+        cursor:none;
+      }
     }
 }
 

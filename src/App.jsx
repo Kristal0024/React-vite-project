@@ -45,7 +45,8 @@ function App() {
     const variants={
       default:{
         x:mousePosition.x-9,
-        y:mousePosition.y-9
+        y:mousePosition.y-9,
+        mixBlendMode:"difference"
       }
     }
   const scrolltocomponent = (id) => {
